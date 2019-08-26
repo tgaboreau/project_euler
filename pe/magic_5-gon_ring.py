@@ -51,7 +51,7 @@ def describe_ring(order):
         description = description + str(inner[(outer.index(i)+1) % len(inner)])
     return description                                   
                  
-print max([describe_ring(order) for order in  magic_orders])
+print(max([describe_ring(order) for order in  magic_orders]))
 
 
 

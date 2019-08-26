@@ -25,4 +25,4 @@ def countperms(target, coins):
                                         counter += 1
     return counter
 
-print countperms(200, coins)
+print(countperms(200, coins))

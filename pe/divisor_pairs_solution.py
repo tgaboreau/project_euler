@@ -4,7 +4,7 @@ import sys
 class Problem():
     def solve(self):
         assert(self.get(904961, 8) == 2714886)
-        print(self.get(904961, 10**12))
+        print((self.get(904961, 10**12)))
 
     def get(self, m, n):
         assert(m % 2 == 1)

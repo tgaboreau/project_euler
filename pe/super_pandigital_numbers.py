@@ -26,7 +26,7 @@ super_pandigitals = []
 check_bases = (11, 9, 8, 7, 6, 5, 4, 3, 2)
 
 while len(super_pandigitals) < 10:
-    last_digits = [i for i in range(0, 12) if i <> first_digit]
+    last_digits = [i for i in range(0, 12) if i != first_digit]
     perms = itertools.permutations(last_digits)
     super_pan = True
     for perm in perms:
@@ -42,7 +42,7 @@ while len(super_pandigitals) < 10:
     first_digit += 1
     
 
-print super_pandigitals
+print(super_pandigitals)
         
 
         

@@ -24,13 +24,13 @@ while not answered:
         pb = pentagonal(b)
         if is_pentagonal(pa+pb):
             if is_pentagonal(pa-pb):
-                print pa-pb
+                print(pa-pb)
                 answered = 1          
         b+=1
     a+=1
     
 
-print datetime.now()-start   
+print(datetime.now()-start)   
 
 # pentags = [pentagonal(i) for i in range(1,1000)]
 # 

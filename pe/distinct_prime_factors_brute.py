@@ -31,7 +31,7 @@ i = 1
 consecutives = 0
 while consecutives < 4:
     if not i % 1000:
-        print i
+        print(i)
     if isprime(i):
         consecutives = 0
     elif count_distinct_prime_factors(i) == 4:
@@ -40,6 +40,6 @@ while consecutives < 4:
         consecutives = 0
     i+=1
 
-print i - consecutives
+print(i - consecutives)
   
-print datetime.now()-start
+print(datetime.now()-start)

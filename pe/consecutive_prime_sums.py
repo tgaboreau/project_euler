@@ -18,7 +18,7 @@ while not found:
         else:
             end = None
         if isprime(sum(primes[i : end])):
-            print sum(primes[i : end])
+            print(sum(primes[i : end]))
             found = True
     remove += 1
 

@@ -66,8 +66,8 @@ while consecutives < 4:
         consecutives = 0
     i+=1
 
-print i - consecutives
+print(i - consecutives)
   
-print datetime.now()-start
+print(datetime.now()-start)
 
 

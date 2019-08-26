@@ -10,4 +10,4 @@ while expansion < 1000:
         occurences += 1
     expansion += 1
         
-print occurences
+print(occurences)

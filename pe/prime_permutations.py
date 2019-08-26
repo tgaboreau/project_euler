@@ -29,12 +29,12 @@ while not found:
         for perm in perms:
             if isprime(perm):
                 if isprime(2*perm-i) and sorted(str(perm)) == sorted(str(2*perm-i)) :
-                    print i, perm, 2*perm-i
+                    print(i, perm, 2*perm-i)
                     found = True
                     break
     i+=1
     
-print datetime.datetime.now()-start    
+print(datetime.datetime.now()-start)    
 
 
 

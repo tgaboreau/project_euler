@@ -6,7 +6,7 @@ from datetime import datetime
 
 def to_8_bit(char):
     n = ord(char)
-    print n
+    print(n)
 
 def from_8_bit(binary):
     return sum([int(binary[i])*2**(7-i) for i in range(8)])
@@ -45,15 +45,15 @@ cipher = open('cipher.txt', 'r').read().split(',')
 cipher = [int(char) for char in cipher][:50]
 
 
-lower_alpha = [unichr(a) for a in range(97, 123)]
+lower_alpha = [chr(a) for a in range(97, 123)]
 for pwd in itertools.permutations(lower_alpha, 3):
     pwd = same_length_pwd(cipher, pwd)
-    new_text = ''.join([unichr(char) for char in xor_encode(cipher, pwd)])
+    new_text = ''.join([chr(char) for char in xor_encode(cipher, pwd)])
     if new_text.find(' the ') > -1:
-        print sum([char for char in xor_encode(cipher, pwd)])
+        print(sum([char for char in xor_encode(cipher, pwd)]))
         break
 
-print datetime.now()-start
+print(datetime.now()-start)
 
 
 

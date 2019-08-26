@@ -12,10 +12,10 @@ def sieve(limit):
     sieve = [True] * (limitn)
     sieve[0] = False
     sieve[1] = False
-    for i in xrange(2,int(math.sqrt(limit))+1):
+    for i in range(2,int(math.sqrt(limit))+1):
         if not sieve[i]:
             continue
-        for pointer in xrange(i**2, limitn, i):
+        for pointer in range(i**2, limitn, i):
             sieve[pointer] = False
     return sieve
 #  

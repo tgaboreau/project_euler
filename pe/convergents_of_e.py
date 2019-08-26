@@ -29,7 +29,7 @@ def previous_term(numer1, denom1, denom0):
 
 
 sf = get_e_simplified_fraction(100)
-print sum([int(char) for char in str(get_numerator(sf))])
+print(sum([int(char) for char in str(get_numerator(sf))]))
 
 
 

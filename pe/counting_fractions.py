@@ -6,6 +6,6 @@ for i in range(2, 10000):
         if hcf(i, j) ==1:
             count += 1
 
-print count
+print(count)
     
             

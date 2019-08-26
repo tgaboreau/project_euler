@@ -62,5 +62,5 @@ i = 9876
 while not is_pan(i):
     i-=1
 
-print i
-print datetime.now()-start
+print(i)
+print(datetime.now()-start)

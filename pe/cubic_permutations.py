@@ -24,5 +24,5 @@ while i:
     cubes[digit_sum].append(cube)
     i += 1
     
-print get_smallest_perm(cube)
+print(get_smallest_perm(cube))
      

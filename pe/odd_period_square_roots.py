@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 def find_hcf(a, b, c):
-    for i in xrange(int(math.ceil(max(a, b, c)/2))+1, 0, -1):
+    for i in range(int(math.ceil(max(a, b, c)/2))+1, 0, -1):
         if not (a%i or b%i or c%i):
             return i
 
@@ -39,9 +39,9 @@ for n in range(0, 10000):
             period.append(integer)
             if remainder == initial_remainder and numerator == initial_numerator:
                 break
-        print n, period
+        print(n, period)
         if len(period) % 2:
             counter += 1
             
-print counter
-print datetime.now()-start
+print(counter)
+print(datetime.now()-start)

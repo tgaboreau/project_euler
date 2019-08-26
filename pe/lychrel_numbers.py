@@ -23,7 +23,7 @@ for i in range(1, 10000):
     if not is_lychrel(i):
         non_lychrels.append(i)
         
-print len(non_lychrels)
+print(len(non_lychrels))
 
 
     

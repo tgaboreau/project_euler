@@ -7,7 +7,7 @@ def GenerateDivisors(n):
 
 
 def check_abundance(n):
-    print n
+    print(n)
     total = 0
     for i in range(1,int(math.floor(n/2))+1):
         if not n%i:
@@ -26,7 +26,7 @@ abundants = [i for i in range(1, 28124) if check_abundance(i)]
 # for i in range(1,28124): 
 #     if GenerateDivisors(i)>i:
 #         abundants.append(i)
-print len(abundants)
+print(len(abundants))
 # print abundants
 
 
@@ -42,7 +42,7 @@ nums = [i for i in range(1,28124) if i not in abundant_sums]
 
 # print nums
 
-print sum(nums)
+print(sum(nums))
 
-print datetime.datetime.now()-start
+print(datetime.datetime.now()-start)
 

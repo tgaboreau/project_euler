@@ -39,4 +39,4 @@ answer = 1
 for num in [1,10,100,1000,10000,100000,1000000]:
     answer*=int(constant[num-1])
 
-print answer
+print(answer)

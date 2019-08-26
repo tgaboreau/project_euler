@@ -20,9 +20,9 @@ for p in (3, 5, 7, 11, 13, 17):
 'now for each string, add the digit which isnt in the string to the start of the string to make it a 10-digit pandigital'
 'but dont check for zeros because a zero at the beginning would not count as a proper one'
 
-print sum([int(digit + poss) for poss in possibles for digit in '123456789' if digit not in poss])
+print(sum([int(digit + poss) for poss in possibles for digit in '123456789' if digit not in poss]))
 
-print datetime.now()-start
+print(datetime.now()-start)
 
 # see other methods below
 

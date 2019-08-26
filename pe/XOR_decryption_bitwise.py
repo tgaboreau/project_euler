@@ -21,15 +21,15 @@ while not answer:
         cipher_section = cipher[:test_chars]
         pwd = same_length_pwd(cipher_section, pwd)
         new_bits = [pwd[i] ^ cipher_section[i] for i in range(len(pwd))]
-        new_text = ''.join([unichr(bit) for bit in new_bits])
+        new_text = ''.join([chr(bit) for bit in new_bits])
         if new_text.find(' the ') > -1:
             answer = pwd
-            print sum([bit for bit in new_bits])
+            print(sum([bit for bit in new_bits]))
             break
     test_chars += 10
 
 
-print datetime.now()-start
+print(datetime.now()-start)
 
 
 

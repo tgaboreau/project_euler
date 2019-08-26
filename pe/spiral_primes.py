@@ -22,6 +22,6 @@ while prime/total > 0.1:
     increment += 8
 
 
-print total/2+1
+print(total/2+1)
 
-print datetime.now()-start
+print(datetime.now()-start)

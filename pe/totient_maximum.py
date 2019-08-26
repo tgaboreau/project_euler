@@ -6,7 +6,7 @@ while i * j < 1000000:
     if isprime(j):
         i*=j
     j+=1
-print i
+print(i)
 
 
 

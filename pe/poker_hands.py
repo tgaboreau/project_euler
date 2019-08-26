@@ -10,7 +10,7 @@ def eval(hand):
     'counts number of occurences for each number'
     grouped_cards = Counter(numbers)
     'makes a list of the sizes of groups, e.g. 4 of a kind would be [4,1], full house would be [3,2]'
-    group_sizes = grouped_cards.values()
+    group_sizes = list(grouped_cards.values())
     'decides the rank of the hand, straight flush being 8, high card being 0'
     if is_flush and is_straight:
         rank = 8
@@ -31,7 +31,7 @@ def eval(hand):
     'returns a list with rank as first element, remaining elements are numbers sorted in order of significance'
     'three of a kind with three fours, a 9 and and 8 would return [3, 4, 9, 8]'
     'full house with three 10s and two 9s would return [6,10,9]'
-    return [rank] + [group[0] for group in sorted([(card, groupsize) for card, groupsize in grouped_cards.iteritems()], key = operator.itemgetter(1, 0), reverse = True)]
+    return [rank] + [group[0] for group in sorted([(card, groupsize) for card, groupsize in grouped_cards.items()], key = operator.itemgetter(1, 0), reverse = True)]
 
 'variable to store number of player 1 wins'
 p1_wins = 0
@@ -54,4 +54,4 @@ with open('poker.txt', 'r') as f:
                 break
 
 
-print p1_wins
+print(p1_wins)

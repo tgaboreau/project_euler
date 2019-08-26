@@ -15,7 +15,7 @@ def numfacs(n):
         primfac.setdefault(d, 0)
         primfac[d]+=1
     i = 1
-    for k, v in primfac.iteritems():
+    for k, v in primfac.items():
         i*=v+1
     return i
    
@@ -27,5 +27,5 @@ while facs<501:
     j+=1
     facs = numfacs(i)
 
-print i
-print datetime.datetime.now()-start
+print(i)
+print(datetime.datetime.now()-start)

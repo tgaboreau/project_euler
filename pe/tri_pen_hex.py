@@ -21,12 +21,12 @@ answered = False
 while not answered:
     ta = triangular(a)
     if is_pentagonal(ta) and is_hexagonal(ta):
-        print ta
+        print(ta)
         answered = True
     a += 1
 
         
-print datetime.now() - start        
+print(datetime.now() - start)        
         
         
 

@@ -10,12 +10,12 @@ def checkcons(a, b, max):
         
      
 max = 0
-for b in xrange(3, 1000, 2):
+for b in range(3, 1000, 2):
     if isprime(b):
-        for a in xrange(-b, 1000, 2):
+        for a in range(-b, 1000, 2):
             primes = checkcons(a,b, max)
             if primes > max:
                 max, maxa, maxb = primes, a, b
 
 
-print maxa*maxb
+print(maxa*maxb)

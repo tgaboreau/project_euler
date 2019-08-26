@@ -6,7 +6,7 @@ start = datetime.now()
 
 
 def find_hcf(a, b):
-    for i in xrange(int(math.ceil(max(a, b)/2))+1, 0, -1):
+    for i in range(int(math.ceil(max(a, b)/2))+1, 0, -1):
         if not (a%i or b%i):
             return i
         
@@ -28,10 +28,10 @@ for d in range(2, 1001):
         continue
     else:
         low_x, y = get_minimal_x(d)
-        print d, y, 1+d*y**2
+        print(d, y, 1+d*y**2)
         max_x = max(max_x, low_x)
 
 
-print max_x      
-print datetime.now()-start
+print(max_x)      
+print(datetime.now()-start)
     

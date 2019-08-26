@@ -32,9 +32,9 @@ while n and not found:
         perms_less.sort(reverse=True)
         for perm in perms_less:
             if isprime(int(str(n) +''.join(perm))):
-                print  str(n) + ''.join(perm)
+                print(str(n) + ''.join(perm))
                 found = True
                 break
     n-=1
 
-print datetime.datetime.now()-start
+print(datetime.datetime.now()-start)

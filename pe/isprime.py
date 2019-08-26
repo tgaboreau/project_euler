@@ -7,7 +7,7 @@ def isprime(n):
         return False
     elif not n%2:
         return False
-    for i in xrange(3, int(fl(n**0.5)+1), 2):
+    for i in range(3, int(fl(n**0.5)+1), 2):
         if not n % i:
             return False
     return True

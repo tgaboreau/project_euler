@@ -49,7 +49,7 @@ def get_poss_next(other_lists, exclude, n):
     for ex in exclude:
         other_lists_temp.pop(ex)
     nextstart = str(n)[2:]
-    for other_list, values in other_lists_temp.iteritems():
+    for other_list, values in other_lists_temp.items():
         for v in values:
             if str(v).startswith(nextstart):
                 output.setdefault(other_list, [])
@@ -63,34 +63,34 @@ startlist = numlists.pop('oct')
 for poss in startlist:
     five_lists = get_poss_next(numlists, [], poss)
 
-    for five_list, five_values in five_lists.iteritems():
+    for five_list, five_values in five_lists.items():
         for five_value in five_values:
             
             
             four_lists = get_poss_next(numlists, [five_list], five_value)
     
-            for four_list, four_values in four_lists.iteritems():
+            for four_list, four_values in four_lists.items():
                 for four_value in four_values:
  
             
                     three_lists = get_poss_next(numlists, [five_list, four_list], four_value)
 
-                    for three_list, three_values in three_lists.iteritems():
+                    for three_list, three_values in three_lists.items():
                         for three_value in three_values:
                             
                             
                             two_lists = get_poss_next(numlists, [five_list, four_list, three_list], three_value)
 
-                            for two_list, two_values in two_lists.iteritems():
+                            for two_list, two_values in two_lists.items():
                                 for two_value in two_values:
                                     
                                     
                                     one_lists = get_poss_next(numlists, [five_list, four_list, three_list, two_list], two_value)
 
                                     if one_lists:
-                                        for one_list, one_values in one_lists.iteritems():
+                                        for one_list, one_values in one_lists.items():
                                             if str(poss).startswith(str(one_values[0])[2:]):
-                                                print poss + five_value + four_value + three_value + two_value + one_values[0]
+                                                print(poss + five_value + four_value + three_value + two_value + one_values[0])
         
 
     

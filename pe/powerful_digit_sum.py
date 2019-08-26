@@ -5,6 +5,6 @@ def digit_sum(a, b):
 
 start = datetime.now()
 
-print max([digit_sum(a, b) for a in xrange(99, 100) for b in xrange(1, 100)])
+print(max([digit_sum(a, b) for a in range(99, 100) for b in range(1, 100)]))
 
-print datetime.now()-start
+print(datetime.now()-start)

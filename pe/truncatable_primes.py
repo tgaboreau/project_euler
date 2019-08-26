@@ -63,5 +63,5 @@ while i < 11:
                                                 i += 1
     j += 2
 
-print total
-print datetime.now()-start
+print(total)
+print(datetime.now()-start)

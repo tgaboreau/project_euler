@@ -10,7 +10,7 @@ def is_trinum(n):
 def wordtotal(word):
     return sum([ord(char)-64 for char in word])
 
-print len([word for word in words if is_trinum(wordtotal(word))])
+print(len([word for word in words if is_trinum(wordtotal(word))]))
 
-print datetime.datetime.now()-start
+print(datetime.datetime.now()-start)
 

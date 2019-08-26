@@ -58,14 +58,14 @@ primelists = []
 start = 1
 
 while len(primelists) < 904:
-    print len(primelists)
+    print(len(primelists))
     l = get_primes(start, 1000)
 #     print l
     primelists.append(l)
     start = primelists[-1][-1]
 
 l = get_primes(start, 961)
-print l
+print(l)
 
 primelists.append(l)
 
@@ -92,7 +92,7 @@ def get_E(m, n):
 def get_Q(n):
     Q = 0
     for i in range(1, n+1):
-        print i
+        print(i)
         Q += get_E(904961, i)
     return Q
 

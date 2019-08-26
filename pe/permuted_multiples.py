@@ -13,5 +13,5 @@ while not is_permuted(i):
     i += 1
 
 
-print i, datetime.now()-start
+print(i, datetime.now()-start)
 

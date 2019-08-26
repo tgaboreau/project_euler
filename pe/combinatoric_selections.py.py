@@ -13,4 +13,4 @@ for n in range(23, 101):
         if factorial(n)/(factorial(r) * factorial(n-r)) > 1000000:
             count+=1
             
-print count
+print(count)

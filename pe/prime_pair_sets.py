@@ -37,7 +37,7 @@ base = 3
    
 while not found:
     if isprime(base):
-        print base
+        print(base)
         primes.append(base)
         secondprimes = []
         
@@ -57,12 +57,12 @@ while not found:
  
                                 for prime4 in pairs[prime3]:
                                     if prime4 in fourthprimes:
-                                        print prime, prime2, prime3, prime4
+                                        print(prime, prime2, prime3, prime4)
                                         found = True
         pairs[i] = secondprimes
     base += 1
 #                                         
 
-print datetime.now() - start   
+print(datetime.now() - start)   
 
 

@@ -33,8 +33,8 @@ def get_solutions(perimeter):
  
 start = datetime.now()
         
-print max([(len(get_solutions(p)),p) for p in range(1,1001)])
+print(max([(len(get_solutions(p)),p) for p in range(1,1001)]))
 
-print datetime.now()-start
+print(datetime.now()-start)
 
     

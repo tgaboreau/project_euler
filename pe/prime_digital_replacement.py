@@ -48,8 +48,8 @@ while not isprime(n) or get_prime_family_value(n) < 8:
     n += 2
 
 
-print n
-print datetime.now()-start
+print(n)
+print(datetime.now()-start)
 
 
 

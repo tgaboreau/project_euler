@@ -50,6 +50,6 @@ def countSubGroup(totalCoins, maxSize, runningTotal = 0):
         
         
    
-print countSubGroup(6, 1)
+print(countSubGroup(6, 1))
 
 
